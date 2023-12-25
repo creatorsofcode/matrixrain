@@ -1,0 +1,51 @@
+<!--Koodi autorid on Vallo, Martin ja Mart-->
+
+</audio>
+<style media="screen">
+body{background-color:black;margin:0;padding:0;}
+  #mr{
+    color:green;
+    margin:0;padding:0;
+    width:100%;
+  }
+</style>
+<<audio src="">
+
+</audio>
+<body>
+<div id='mr'></div>
+<div id='mr2'></div>
+<script>
+
+  var arr = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン\n' +
+             'ABCDEFGHIJKLMNOPQRSTUVWXYZn\n'+
+             '0123456789'
+  //var arr2 =[]
+  var str = ''
+  var str2 = ''
+
+  function startCountdown(counter) {
+    const interval = setInterval(() => {
+
+      for (var j = 0; j < 129; j++) {
+        str += arr[Math.ceil(Math.random () * arr.length - 1)]
+}
+ str += '<br>'
+str2 = str + str2
+str = ''
+
+if (str2.length > 4500) {
+  console.log('sda')
+  str2 = str2.substr(0, 4500)
+}
+
+ document.getElementById('mr').innerHTML = str2
+
+      counter++;
+    }, 100);
+  }
+  startCountdown(5);
+
+
+  </script>
+</body>
